@@ -1,0 +1,39 @@
+$gutter: 1.5rem;
+$primary: #FDE4D0;
+$dark-primary: #FFD7B7;
+$secondary: #3D3C3A;
+$tertiary: #F27360;
+
+:root {
+    --gutter: 1.5rem;
+    --primary: #{$primary};
+    --dark-primary: #{$dark-primary};
+    --secondary: #{$secondary};
+    --tertiary: #{$tertiary};
+}
+
+.dark {
+    --primary: #{$secondary};
+    --secondary: #{$primary};
+    --tertiary: #{$tertiary};
+}
+
+$xs-breakpoint: 1400px;
+$tablet-breakpoint: 1024px;
+$tablet-xs-breakpoint: 800px;
+$mobile-breakpoint: 480px;
+
+$font: 'M PLUS 1p', sans-serif;
+
+$thin: 400;
+$regular: 500;
+$bold: 700;
+$extra-bold: 900;
+
+
+$text-1: 64px;
+$text-2: 48px;
+$text-3: 36px;
+$text-4: 24px;
+$text-5: 18px;
+$text-6: 14px;
