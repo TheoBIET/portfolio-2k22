@@ -9,12 +9,16 @@
   cursor: pointer;
 
   &.little {
-      padding: calc($gutter / 2) calc($gutter / 1.5) !important;
+    padding: calc($gutter / 2) calc($gutter / 1.5) !important;
   }
 
   &.red {
     background-color: $tertiary;
     color: $primary;
+
+    i {
+      color: $primary;
+    }
 
     &:hover {
       box-shadow: 0 10px 20px -10px rgba($tertiary, 1);

@@ -1,5 +1,7 @@
 <template>
-  <Navbar />
+  <div id="root">
+    <Landing />
+  </div>
 </template>
 
 <script>

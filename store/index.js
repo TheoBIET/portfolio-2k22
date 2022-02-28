@@ -1,6 +1,6 @@
-const state = {
+const state = () => ({
     isDarkMode: false,
-}
+})
 
 const actions = {
 }

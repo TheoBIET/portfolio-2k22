@@ -6,6 +6,10 @@
     width: 100%;
     padding: $gutter calc($gutter * 4);
 
+    @include mobTab {
+      justify-content: center;
+    }
+
     &__logo {
       border: 4px solid var(--secondary);
       border-radius: 2px;
@@ -92,6 +96,10 @@
       font-size: $text-5;
       align-items: center;
 
+      @include mobTab {
+        display: none;
+      }
+
       &__item {
         cursor: pointer;
         position: relative;
@@ -119,6 +127,11 @@
       display: flex;
       gap: $gutter;
       align-items: center;
+
+      @include mobTab {
+        display: none;
+      }
+
       &__languages {
         cursor: pointer;
         &__icon {
