@@ -1,0 +1,137 @@
+#navbar {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: $gutter calc($gutter * 4);
+
+    &__logo {
+      border: 4px solid var(--secondary);
+      border-radius: 2px;
+      padding: calc($gutter / 4) calc($gutter / 2);
+      display: flex;
+      flex-direction: column;
+      gap: calc($gutter / 4);
+
+      &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: calc($gutter / 4);
+
+        &__wrapper {
+          font-size: $text-4;
+          font-weight: $extra-bold;
+          color: $tertiary;
+          position: relative;
+
+          &__letter {
+            font-size: $text-4;
+            font-weight: $extra-bold;
+            color: $tertiary;
+            animation: changeLetter 15s infinite;
+
+            &.--hidden {
+              transform: translateY(-100%) translateX(0%);
+              position: absolute;
+              animation: changeLetterReturn 15s infinite;
+            }
+
+            &.--i {
+              margin-left: 0.15rem;
+            }
+
+            @keyframes changeLetter {
+              0% {
+                opacity: 0;
+              }
+              10% {
+                opacity: 1;
+              }
+              40% {
+                opacity: 1;
+              }
+              50% {
+                opacity: 0;
+              }
+              80% {
+                opacity: 0;
+              }
+              100% {
+                opacity: 0;
+              }
+            }
+
+            @keyframes changeLetterReturn {
+              0% {
+                opacity: 0;
+              }
+              40% {
+                opacity: 0;
+              }
+              50% {
+                opacity: 1;
+              }
+              80% {
+                opacity: 1;
+              }
+              100% {
+                opacity: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__nav {
+      display: flex;
+      justify-content: space-between;
+      gap: $gutter;
+      font-size: $text-5;
+      align-items: center;
+
+      &__item {
+        cursor: pointer;
+        position: relative;
+        transition: 0.2s ease-in-out;
+
+        &:hover:not(.button) {
+          transform: scale(1.05);
+
+          &::before {
+            content: '';
+            position: absolute;
+            bottom: -0.3rem;
+            left: 0.3rem;
+            width: 0.8rem;
+            height: 3px;
+            background: $tertiary;
+            border-radius: 5px;
+            animation: fadeInLeft 0.2s ease-in-out;
+          }
+        }
+      }
+    }
+
+    &__settings {
+      display: flex;
+      gap: $gutter;
+      align-items: center;
+      &__languages {
+        cursor: pointer;
+        &__icon {
+          font-size: $text-4;
+        }
+      }
+
+      &__darkmode {
+        cursor: pointer;
+        &__icon {
+          font-size: $text-4;
+        }
+      }
+    }
+  }
+}

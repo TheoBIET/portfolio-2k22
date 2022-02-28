@@ -81,11 +81,11 @@ audio,
 video {
   font-family: $font;
   font-weight: $regular;
-  color:var(--black)
+  color:var(--secondary);
 }
 
 body {
-  background-color: var(--white);
+  background-color: var(--primary);
   overflow-x: hidden;
 }
 

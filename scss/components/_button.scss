@@ -1,0 +1,30 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc($gutter / 1.5) $gutter;
+  background-color: var(--white);
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+
+  &.little {
+      padding: calc($gutter / 2) calc($gutter / 1.5) !important;
+  }
+
+  &.red {
+    background-color: $tertiary;
+    color: $primary;
+
+    &:hover {
+      box-shadow: 0 10px 20px -10px rgba($tertiary, 1);
+      transform: translate(0, -3px);
+    }
+
+    &.outlined {
+      background-color: $primary;
+      border: 1px solid $tertiary;
+      color: $tertiary;
+    }
+  }
+}
