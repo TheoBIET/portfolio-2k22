@@ -2,6 +2,7 @@
   <div id="default">
     <Navbar />
     <Nuxt />
+    <Footer />
   </div>
 </template>
 
@@ -10,6 +11,7 @@ export default {
   name: 'DefaultLayout',
   components: {
     Navbar: () => import('../components/nav.vue'),
+    Footer: () => import('../components/footer.vue'),
   },
   head() {
     return {

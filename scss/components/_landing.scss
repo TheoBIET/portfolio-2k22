@@ -10,6 +10,7 @@
     gap: $gutter;
 
     @include mob {
+      min-height: 60vh;
       gap: calc($gutter / 2);
     }
 

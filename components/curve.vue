@@ -5,8 +5,12 @@
     <img src="@/assets/images/curve.svg" alt="" />
     <img src="@/assets/images/curve.svg" alt="" />
     <img src="@/assets/images/curve.svg" alt="" />
+    <img src="@/assets/images/curve.svg" alt="" />
+    <img src="@/assets/images/curve.svg" alt="" />
   </div>
   <div v-else id="curve">
+    <img src="@/assets/images/curve-dark.svg" alt="" />
+    <img src="@/assets/images/curve-dark.svg" alt="" />
     <img src="@/assets/images/curve-dark.svg" alt="" />
     <img src="@/assets/images/curve-dark.svg" alt="" />
     <img src="@/assets/images/curve-dark.svg" alt="" />

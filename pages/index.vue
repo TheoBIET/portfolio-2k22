@@ -1,6 +1,7 @@
 <template>
   <div id="root">
     <Landing />
+    <Skills />
   </div>
 </template>
 
